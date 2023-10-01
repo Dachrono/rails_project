@@ -1,0 +1,2 @@
+class Mascota < ApplicationRecord
+end
