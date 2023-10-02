@@ -4,7 +4,7 @@ class CreateClientes < ActiveRecord::Migration[7.0]
       t.string :nombre, null: false
       t.text :direccion, default: "Sin dirección" 
       t.string :email, default: "Sin email" 
-      t.integer :telefono, null: false 
+      t.bigint :telefono, null: false 
 
       t.timestamps
     end
