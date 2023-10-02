@@ -1,10 +1,13 @@
 <div>
 <% @clientes.each do |item| %>
-    <tr>
+    <th>
+        <td><%= item.id %></td>
         <td><%= item.nombre %></td>
         <td><%= item.direccion %></td>
         <td><%= item.email %></td>
         <td><%= item.telefono %></td>
-    </tr>    
+    </th>    
 <% end %>        
 </div>
+
+<%= link_to "Volver", menu_path %>
