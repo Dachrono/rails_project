@@ -3,9 +3,7 @@
     <th>
         <td><%= item.id %></td>
         <td><%= item.nombre %></td>
-        <td><%= item.direccion %></td>
-        <td><%= item.email %></td>
-        <td><%= item.telefono %></td>
+        <td><%= link_to "Detalles", cliente_path(item.id) %></td>
     </th>    
 <% end %>        
 </div>

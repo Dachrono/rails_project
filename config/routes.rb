@@ -7,5 +7,5 @@ Rails.application.routes.draw do
 
   get "/menu", to: "menu#index"
   get "/clientes", to: "clientes#index"
-
+  get "/clientes/:id", to: "clientes#details", as: :cliente
 end
