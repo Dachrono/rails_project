@@ -1,0 +1,10 @@
+<div>
+<% @clientes.each do |item| %>
+    <tr>
+        <td><%= item.nombre %></td>
+        <td><%= item.direccion %></td>
+        <td><%= item.email %></td>
+        <td><%= item.telefono %></td>
+    </tr>    
+<% end %>        
+</div>

@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   root "menu#index"
 
   get "/menu", to: "menu#index"
+  get "/clientes", to: "clientes#index"
 
 end
