@@ -5,7 +5,9 @@
         <td><%= item.nombre %></td>
         <td><%= link_to "Detalles", cliente_path(item.id) %></td>
     </th>    
-<% end %>        
+<% end %>
+<div>
+<%= link_to "Nuevo cliente", new_cliente_path %>        
 </div>
 
 <%= link_to "Volver", menu_path %>
