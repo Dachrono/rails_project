@@ -1,0 +1,25 @@
+# fly.toml app configuration file generated for rails-project on 2023-11-21T13:28:26-06:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "rails-project"
+primary_region = "qro"
+console_command = "/rails/bin/rails console"
+
+[build]
+
+[deploy]
+  release_command = "./bin/rails db:prepare"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+[[statics]]
+  guest_path = "/rails/public"
+  url_prefix = "/"

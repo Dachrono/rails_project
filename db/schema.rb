@@ -24,12 +24,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_01_225944) do
   end
 
   create_table "mascota", force: :cascade do |t|
-    t.string "nombre"
-    t.string "raza"
-    t.string "color"
-    t.string "sexo"
-    t.integer "edad"
-    t.boolean "esterilizado"
+    t.string "nombre", null: false
+    t.string "raza", null: false
+    t.string "color", null: false
+    t.string "sexo", null: false
+    t.integer "edad", null: false
+    t.boolean "esterilizado", null: false
     t.bigint "cliente_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
