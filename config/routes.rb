@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
   # Defines the root path route ("/")
   # root "articles#index"
-  devise_for :users
+  devise_for :users, skip: [:passwords, :confirmations, :unlocks]
   
   root "menu#index"
 

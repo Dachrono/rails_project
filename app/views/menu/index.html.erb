@@ -3,6 +3,12 @@
     <%= image_tag(asset_path("ava_logo.png"), alt: "Ava logo", class: "avaLogo") %>
 </div>
 
+<%= @user.nickname %>
+
+<% if @user.role == "Admin" %>
+    hello admin
+<% end %>
+
 <% if user_signed_in? %>
     <%= button_to "Cerrar sesión", destroy_user_session_path, method: :delete %>
 <% end %>
