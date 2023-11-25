@@ -1,0 +1,37 @@
+.LogIn {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.LogIn h2 {
+    font-size: 3rem;
+}
+
+.LogIn p {
+    margin-bottom: 2rem;
+}
+
+.LogIn form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.LogIn form input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.vet1 {
+    width: 100%;
+}
