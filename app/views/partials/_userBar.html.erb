@@ -1,0 +1,8 @@
+<div class="UserBar">
+
+    <p> Hola <%= @user.nickname %> </p>
+
+    <% if user_signed_in? %>
+        <%= button_to "Cerrar sesión", destroy_user_session_path, method: :delete %>
+    <% end %>
+</div>
